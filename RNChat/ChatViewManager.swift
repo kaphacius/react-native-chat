@@ -8,6 +8,7 @@
 
 import Foundation
 
+@objc(ChatViewManager)
 class ChatViewManager: RCTViewManager {
     override func view() -> UIView! {
         return ChatView()

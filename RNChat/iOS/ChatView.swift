@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChatView: UIView, UITextViewDelegate {
+class ChatView: RCTView, UITextViewDelegate {
     var chatCollectionView: UICollectionView!
     var inputToolbar: UIToolbar!
     var inputTextView: UITextView!

@@ -132,6 +132,7 @@
 		993292F91AF56FF9003FB987 /* RNChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		993293041AF56FFA003FB987 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; name = ChatView.swift; path = iOS/ChatView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		993293061AF570E5003FB987 /* ChatViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ChatViewManager.swift; sourceTree = "<group>"; tabWidth = 4; };
+		993293621AF67E68003FB987 /* ChatViewManagerExport.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = ChatViewManagerExport.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +244,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				993293041AF56FFA003FB987 /* ChatView.swift */,
 				993293061AF570E5003FB987 /* ChatViewManager.swift */,
+				993293621AF67E68003FB987 /* ChatViewManagerExport.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
