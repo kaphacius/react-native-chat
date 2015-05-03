@@ -23,8 +23,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		993293051AF56FFA003FB987 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993293041AF56FFA003FB987 /* ChatView.swift */; };
-		993293071AF570E5003FB987 /* ChatViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993293061AF570E5003FB987 /* ChatViewManager.swift */; };
+		A65481B81AF63B8B004738FE /* RNChat in Resources */ = {isa = PBXBuildFile; fileRef = A65481B71AF63B8B004738FE /* RNChat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,9 +128,7 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		993292F91AF56FF9003FB987 /* RNChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNChat-Bridging-Header.h"; sourceTree = "<group>"; };
-		993293041AF56FFA003FB987 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatView.swift; path = iOS/ChatView.swift; sourceTree = "<group>"; };
-		993293061AF570E5003FB987 /* ChatViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ChatViewManager.swift; sourceTree = "<group>"; tabWidth = 4; };
+		A65481B71AF63B8B004738FE /* RNChat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RNChat; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,13 +238,10 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
-				993293041AF56FFA003FB987 /* ChatView.swift */,
-				993293061AF570E5003FB987 /* ChatViewManager.swift */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				993292F91AF56FF9003FB987 /* RNChat-Bridging-Header.h */,
 			);
 			name = RNChat;
 			sourceTree = "<group>";
@@ -296,6 +290,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				A65481B71AF63B8B004738FE /* RNChat */,
 				13B07FAE1A68108700A75B9A /* RNChat */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNChatTests */,
@@ -515,6 +510,7 @@
 			files = (
 				008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A65481B81AF63B8B004738FE /* RNChat in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,8 +531,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				993293051AF56FFA003FB987 /* ChatView.swift in Sources */,
-				993293071AF570E5003FB987 /* ChatViewManager.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
