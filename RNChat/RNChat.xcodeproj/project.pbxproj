@@ -25,6 +25,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		993293051AF56FFA003FB987 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993293041AF56FFA003FB987 /* ChatView.swift */; };
 		993293071AF570E5003FB987 /* ChatViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993293061AF570E5003FB987 /* ChatViewManager.swift */; };
+		993293781AF6B21C003FB987 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993293771AF6B21C003FB987 /* ChatMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		993293041AF56FFA003FB987 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; name = ChatView.swift; path = iOS/ChatView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		993293061AF570E5003FB987 /* ChatViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ChatViewManager.swift; sourceTree = "<group>"; tabWidth = 4; };
 		993293621AF67E68003FB987 /* ChatViewManagerExport.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = ChatViewManagerExport.m; sourceTree = "<group>"; };
+		993293771AF6B21C003FB987 /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				993292F91AF56FF9003FB987 /* RNChat-Bridging-Header.h */,
+				993293771AF6B21C003FB987 /* ChatMessage.swift */,
 			);
 			name = RNChat;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				993293051AF56FFA003FB987 /* ChatView.swift in Sources */,
 				993293071AF570E5003FB987 /* ChatViewManager.swift in Sources */,
+				993293781AF6B21C003FB987 /* ChatMessage.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
