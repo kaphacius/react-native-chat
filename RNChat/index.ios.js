@@ -4,13 +4,21 @@
  */
 'use strict';
 
+var createComponent = require('createReactIOSNativeComponentClass');
+var ReactIOSViewAttributes = require('ReactIOSViewAttributes');
 var React = require('react-native');
+var merge = require('merge');
 var {
   AppRegistry,
   StyleSheet,
   Text,
   View,
 } = React;
+
+var validAttributes = merge(
+  {},
+  ReactIOSViewAttributes.UIView
+);
 
 var ChatView = createComponent({
   validAttributes: validAttributes,
