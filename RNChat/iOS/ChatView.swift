@@ -47,7 +47,6 @@ class ChatView: RCTView, UITextViewDelegate {
         var collectionViewBottom = NSLayoutConstraint(item: chatCollectionView, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: inputToolbar, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
         var collectionViewLeading = NSLayoutConstraint(item: chatCollectionView, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0)
         var collectionViewTrailing = NSLayoutConstraint(item: chatCollectionView, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.RightMargin, multiplier: 1.0, constant: 0.0)
-        self.setTranslatesAutoresizingMaskIntoConstraints(false)
         self.addConstraints([collectionViewTop, collectionViewBottom, collectionViewLeading, collectionViewTrailing])
         
         var sendButtonTop = NSLayoutConstraint(item: sendButton, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: inputToolbar, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
