@@ -12,23 +12,17 @@ var {
   View,
 } = React;
 
+var ChatView = createComponent({
+  validAttributes: validAttributes,
+  uiViewClassName: 'ChatView',
+});
+
 var RNChat = React.createClass({
-  render: function() {
+  render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+Control+Z for dev menu
-        </Text>
-      </View>
+      <ChatView someParameter="test" />
     );
-  }
+  },
 });
 
 var styles = StyleSheet.create({
