@@ -28,6 +28,7 @@
 		993293781AF6B21C003FB987 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993293771AF6B21C003FB987 /* ChatMessage.swift */; };
 		993293AC1AF7FF13003FB987 /* ChatDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993293AB1AF7FF13003FB987 /* ChatDataSource.swift */; };
 		993293F51AF920EB003FB987 /* ChatViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 993293F41AF920EB003FB987 /* ChatViewManager.m */; };
+		993294151AFAB987003FB987 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993294141AFAB987003FB987 /* ChatMessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		993293AB1AF7FF13003FB987 /* ChatDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ChatDataSource.swift; sourceTree = "<group>"; tabWidth = 4; };
 		993293F31AF920EB003FB987 /* ChatViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewManager.h; sourceTree = "<group>"; };
 		993293F41AF920EB003FB987 /* ChatViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewManager.m; sourceTree = "<group>"; };
+		993294141AFAB987003FB987 /* ChatMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 				993293AB1AF7FF13003FB987 /* ChatDataSource.swift */,
 				993293F31AF920EB003FB987 /* ChatViewManager.h */,
 				993293F41AF920EB003FB987 /* ChatViewManager.m */,
+				993294141AFAB987003FB987 /* ChatMessageCell.swift */,
 			);
 			name = RNChat;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				993293071AF570E5003FB987 /* ChatViewManager.swift in Sources */,
 				993293781AF6B21C003FB987 /* ChatMessage.swift in Sources */,
 				993293AC1AF7FF13003FB987 /* ChatDataSource.swift in Sources */,
+				993294151AFAB987003FB987 /* ChatMessageCell.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				993293F51AF920EB003FB987 /* ChatViewManager.m in Sources */,
 			);
