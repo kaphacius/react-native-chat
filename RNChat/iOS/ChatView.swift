@@ -14,12 +14,16 @@ class ChatView: RCTView, UITextViewDelegate {
     var inputTextView: UITextView!
     var sendButton: UIButton!
     var inputToolBarBottomConstraint: NSLayoutConstraint!
+    var chatDataSource: ChatDataSource!
     
     let kToolbarHeight: CGFloat = 44.0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        chatCollectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: UICollectionViewLayout())
+        var layout = UICollectionViewFlowLayout()
+//        layout.sectionInset = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
+        
+        chatCollectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
         chatCollectionView.setTranslatesAutoresizingMaskIntoConstraints(false)
         self.addSubview(chatCollectionView)
         inputToolbar = UIToolbar(frame: CGRectZero)
@@ -65,6 +69,9 @@ class ChatView: RCTView, UITextViewDelegate {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillChangeFrame:", name: UIKeyboardWillChangeFrameNotification, object: nil)
         
         sendButton.addTarget(self, action: "sendButtonTapped", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        self.chatDataSource = ChatDataSource(сollectionView: self.chatCollectionView)
+        self.chatCollectionView.backgroundColor = UIColor.cyanColor()
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -85,6 +92,8 @@ class ChatView: RCTView, UITextViewDelegate {
     func sendButtonTapped() {
         if true == inputTextView.isFirstResponder() {
             inputTextView.resignFirstResponder()
+            var message = ChatMessage(isAuthor: true, date: NSDate(), message: inputTextView.text)
+            chatDataSource.addMessage(message)
         }
     }
     
